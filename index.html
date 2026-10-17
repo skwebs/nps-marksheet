@@ -10,7 +10,18 @@
   
   <!-- Tailwind CSS v4 browser runtime: existing utility classes define the layout. -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    /> -->
   <style>
     /* ================================================================
        MARKSHEET STYLES
@@ -22,8 +33,9 @@
     *::before,
     *::after {
       box-sizing: border-box;
-      font-family: Nunito, Roboto, Helvetica, Georgia, Arial, sans-serif,
-        "Comic Sans MS", Calibri, sans-serif;
+      /* font-family: Nunito, Roboto, Helvetica, Georgia, Arial, sans-serif,
+        "Comic Sans MS", Calibri, sans-serif; */
+      font-family: Lato, sans-serif;
     }
 
     html,
@@ -36,6 +48,10 @@
     @page {
       size: A4 portrait;
       margin: 0;
+    }
+
+    .student-details > tr > th {
+      width: 100px;
     }
 
     body.A4 .sheet {
@@ -113,7 +129,7 @@
   <!-- page -->
   <section class="sheet p-4 flex flex-col">
     <!-- main content -->
-    <div class="main-content border-2 border-black h-full flex flex-col">
+    <div class="main-content border border-black h-full flex flex-col">
       <!-- header details -->
       <div class="flex justify-between px-2">
         <div class="font-semibold">Estd. : 2017</div>
@@ -147,47 +163,47 @@
       <div class="p-0">
         <!-- result type -->
         <div>
-          <div class="w-full text-center border-t-2 border-black">
+          <div class="w-full text-center border-t border-black">
             <div>REPORT CARD [HALF-YEARLY EXAMINATION]</div>
             <div>SESSION <STRONG>2026-2027</STRONG></div>
           </div>
         </div>
         <!-- student details -->
         <div>
-          <div class="w-full border-t-2 border-black py-2 px-4">
+          <div class="w-full border-t border-black py-2 px-4">
             <div class="flex gap-x-2">
               <div class="grow">
-                <table class="w-full text-left">
-                   <tr class="border-b-[1px] border-gray-300">
+                <table class="w-full text-left student-details">
+                   <tr class="border-b border-gray-300">
                     <th class="px-3 py-2">Name</th>
                     <td class="px-3 py-2">:</td>
-                    <td class="px-3 py-2">Demo Name</td>
+                    <td class="px-auto py-2">Demo Name</td>
                   </tr>
-                  <tr class="border-b-[1px] border-gray-300">
+                  <tr class="border-b border-gray-300">
                     <th class="px-3 py-2">Class</th>
                     <td class="px-3 py-2">:</td>
-                    <td class="px-3 py-2">Demo Class</td>
+                    <td class="px-auto py-2">Demo Class</td>
                   </tr>
-                  <tr class="border-b-[1px] border-gray-300">
+                  <tr class="border-b border-gray-300">
                     <th class="px-3 py-2">Roll No.</th>
                     <td class="px-3 py-2">:</td>
-                    <td class="px-3 py-2">Demo Roll</td>
+                    <td class="px-auto py-2">Demo Roll</td>
                   </tr>
-                  <tr class="border-b-[1px] border-gray-300">
+                  <tr class="border-b border-gray-300">
                     <th class="px-3 py-2">Mother's Name</th>
                     <td class="px-3 py-2">:</td>
-                    <td class="px-3 py-2">Demo Name</td>
+                    <td class="px-auto py-2">Demo Name</td>
                   </tr>
-                  <tr class="border-b-[1px] border-gray-300">
+                  <tr class="border-b border-gray-300">
                     <th class="px-3 py-2">Father's Name</th>
                     <td class="px-3 py-2">:</td>
-                    <td class="px-3 py-2">Demo Name</td>
+                    <td class="px-auto py-2">Demo Name</td>
                   </tr>
                 </table>
               </div>
               <!-- student picture -->
               <div class="">
-                <div class="border-2 border-black w-[150px] h-[180px]">
+                <div class="border border-black w-[150px] h-[180px]">
                   <!-- <div class="border border-black aspect-[20/23]"> -->
                   <img src="./person.jpg" class="w-full h-full aspect-[4/3]" alt="student image" />
                 </div>
@@ -197,11 +213,11 @@
           </div>
         </div>
         <!-- marks -->
-        <div class="w-full border-y-2 py-2 border-black px-4">
+        <div class="w-full border-y-1 py-2 border-black px-4">
           <div class="flex gap-5">
-            <table class="w-full table text-center">
+            <table class="w-full table text-center ">
               <thead>
-                <tr class="border-b-2 border-black">
+                <tr class="border-b border-black">
                   <th class="px-3 py-2 text-left">Subjects</th>
                   <th class="px-3 py-2">PA-I (05)</th>
                   <th class="px-3 py-2">PA-II (05)</th>
@@ -211,7 +227,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-b-[1px] border-gray-300">
+                <tr class="border-b border-gray-300">
                   <th class="px-3 py-2 text-left">Hindi</th>
                   <td class="px-3 py-2">#</td>
                   <td class="px-3 py-2">#</td>
@@ -220,7 +236,7 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
 
-                <tr class="border-b-[1px] border-gray-300">
+                <tr class="border-b border-gray-300">
                   <th class="px-3 py-2 text-left">English</th>
                   <td class="px-3 py-2">#</td>
                   <td class="px-3 py-2">#</td>
@@ -229,7 +245,7 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
 
-                <tr class="border-b-[1px] border-gray-300">
+                <tr class="border-b border-gray-300">
                   <th class="px-3 py-2 text-left">Maths</th>
                   <td class="px-3 py-2">#</td>
                   <td class="px-3 py-2">#</td>
@@ -238,7 +254,7 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
 
-                <tr class="border-b-[1px] border-gray-300">
+                <tr class="border-b border-gray-300">
                   <th class="px-3 py-2 text-left">Science</th>
                   <td class="px-3 py-2">#</td>
                   <td class="px-3 py-2">#</td>
@@ -247,7 +263,7 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
 
-                <tr class="border-b-[1px] border-gray-300">
+                <tr class="border-b border-gray-300">
                   <th class="px-3 py-2 text-left">S.Science</th>
                   <td class="px-3 py-2">#</td>
                   <td class="px-3 py-2">#</td>
@@ -256,7 +272,7 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
 
-                <tr class="border-b-[1px] border-gray-300">
+                <tr class="border-b border-black">
                   <th class="px-3 py-2 text-left">Computer</th>
                   <td class="px-3 py-2">#</td>
                   <td class="px-3 py-2">#</td>
@@ -265,8 +281,19 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
               </tbody>
+              <tfoot>
+                <tr >
+                  <th class="px-3 py-2 text-left">Total</th>
+                  <th class="px-3 py-2">XXX</th>
+                  <th class="px-3 py-2">XXX</th>
+                  <th class="px-3 py-2">XXX</th>
+                  <th class="px-3 py-2">XXX</th>
+                  <th class="px-3 py-2">XXX</th>
+                 
+                </tr>
+              </tfoot>
             </table>
-            <div class="w-[200px]">
+            <div class="w-50">
               <div class="w-full aspect-square border border-black">
                 <img src="./sample-qr-code.png" alt="" />
               </div>
@@ -279,35 +306,35 @@
                   </tr>
                   <tr>
                     <th class="border border-black px-1">A+</th>
-                    <td class="border border-black px-1">91%-100%</td>
+                    <td class="border border-black px-1">90% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">A</th>
-                    <td class="border border-black px-1">81%-90%</td>
+                    <td class="border border-black px-1">80% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">B+</th>
-                    <td class="border border-black px-1">71%-80%</td>
+                    <td class="border border-black px-1">70% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">B</th>
-                    <td class="border border-black px-1">61%-70%</td>
+                    <td class="border border-black px-1">60% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">C+</th>
-                    <td class="border border-black px-1">51%-60%</td>
+                    <td class="border border-black px-1">50% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">C</th>
-                    <td class="border border-black px-1">41%-50%</td>
+                    <td class="border border-black px-1">40% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">D</th>
-                    <td class="border border-black px-1">33%-50%</td>
+                    <td class="border border-black px-1">30% and above</td>
                   </tr>
                   <tr>
                     <th class="border border-black px-1">E</th>
-                    <td class="border border-black px-1">Less than 33%</td>
+                    <td class="border border-black px-1">Less than 30%</td>
                   </tr>
                 </table>
               </div>
@@ -357,16 +384,16 @@
           <!-- <div class="font-semibold px-5">
             <div class="flex flex-col text-center">
               <div>21-04-2024</div>
-              <div class="border-t-2 border-dashed border-black">Class Teacher</div>
+              <div class="border-t border-dashed border-black">Class Teacher</div>
             </div>
           </div> -->
-          <div class="font-semibold border-t-2 border-dashed border-black px-5">
+          <div class="font-semibold border-t border-dashed border-black px-5">
             Class Teacher
           </div>
-          <div class="font-semibold border-t-2 border-dashed border-black px-5">
+          <div class="font-semibold border-t border-dashed border-black px-5">
             Exam Controller
           </div>
-          <div class="font-semibold border-t-2 border-dashed border-black px-5">
+          <div class="font-semibold border-t border-dashed border-black px-5">
             Director/Principal
           </div>
         </div>
@@ -379,7 +406,7 @@
       <!-- footer -->
       <!-- ========================= HIDDEN BELOW PART ====================== -->
       <div>
-        <div class="hidden bg-green-700 text-white px-1 py-[1px] flex justify-between border-t-2 border-black">
+        <div class="hidden bg-green-700 text-white px-1 py-[1px] flex justify-between border-t border-black">
           <!-- call -->
           <div class="flex">
             <svg class="size-6 text-white m-auto mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
