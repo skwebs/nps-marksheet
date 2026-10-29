@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light" />
   <title>Marksheet : NATIONAL PUBLIC SCHOOL</title>
-  <meta name="author" content="Satish Kumar Sharma">
-  
+  <meta name="author" content="Satish Kumar Sharma" />
+
   <!-- Tailwind CSS v4 browser runtime: existing utility classes define the layout. -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
   <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -50,9 +51,11 @@
       margin: 0;
     }
 
+    /*
     .student-details > tr > th {
       width: 100px;
     }
+    */
 
     body.A4 .sheet {
       width: 210mm;
@@ -86,7 +89,8 @@
       background-position: center;
       background-size: 60px 60px;
       background-repeat: repeat;
-      opacity: 0.1; /* Adjust only this value to tune watermark visibility. */
+      opacity: 0.1;
+      /* Adjust only this value to tune watermark visibility. */
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -107,6 +111,7 @@
 
     /* 5. Print output: remove preview-only decoration without changing layout */
     @media print {
+
       html,
       body {
         width: 210mm;
@@ -147,9 +152,7 @@
           <div class="font-semibold text-4xl font-[roboto,helvetica]">
             NATIONAL PUBLIC SCHOOL
           </div>
-          <div class="font-semibold">
-            SINHPUR, KANHAULI, VAISHALI
-          </div>
+          <div class="font-semibold">SINHPUR, KANHAULI, VAISHALI</div>
           <!-- <div class="text-sm">
             Run & Managed by AnitaBindeshwar Foundation (Regd. under Company
             Act 2013)
@@ -165,65 +168,71 @@
         <div>
           <div class="w-full text-center border-t border-black">
             <div>REPORT CARD [HALF-YEARLY EXAMINATION]</div>
-            <div>SESSION <STRONG>2026-2027</STRONG></div>
+            <div>SESSION <strong>2026-2027</strong></div>
           </div>
         </div>
         <!-- student details -->
         <div>
           <div class="w-full border-t border-black py-2 px-4">
             <div class="flex gap-x-2">
-              <div class="grow">
-                <table class="w-full text-left student-details">
-                   <tr class="border-b border-gray-300">
-                    <th class="px-3 py-2">Name</th>
-                    <td class="px-3 py-2">:</td>
-                    <td class="px-auto py-2">Demo Name</td>
-                  </tr>
-                  <tr class="border-b border-gray-300">
-                    <th class="px-3 py-2">Class</th>
-                    <td class="px-3 py-2">:</td>
-                    <td class="px-auto py-2">Demo Class</td>
-                  </tr>
-                  <tr class="border-b border-gray-300">
-                    <th class="px-3 py-2">Roll No.</th>
-                    <td class="px-3 py-2">:</td>
-                    <td class="px-auto py-2">Demo Roll</td>
-                  </tr>
-                  <tr class="border-b border-gray-300">
-                    <th class="px-3 py-2">Mother's Name</th>
-                    <td class="px-3 py-2">:</td>
-                    <td class="px-auto py-2">Demo Name</td>
-                  </tr>
-                  <tr class="border-b border-gray-300">
-                    <th class="px-3 py-2">Father's Name</th>
-                    <td class="px-3 py-2">:</td>
-                    <td class="px-auto py-2">Demo Name</td>
-                  </tr>
-                </table>
-              </div>
               <!-- student picture -->
-              <div class="">
-                <div class="border border-black w-[150px] h-[180px]">
-                  <!-- <div class="border border-black aspect-[20/23]"> -->
-                  <img src="./person.jpg" class="w-full h-full aspect-[4/3]" alt="student image" />
+              <div>
+                <div class="border h-42 bg-red-500/20 border-black aspect-[20/23] overflow-hidden">
+                  <img src="./person.jpg" alt="student image" class="h-full w-full" />
                 </div>
               </div>
               <!-- /student picture -->
+              <div class="grow px-2">
+                <table class="w-full text-left">
+                  <tr>
+                    <th class="px-3 w-34">Name</th>
+                    <td class="px-1">:</td>
+                    <td class="px-auto py-1">Demo Name</td>
+                  </tr>
+                  <tr>
+                    <th class="px-3">Class</th>
+                    <td class="px-1">:</td>
+                    <td class="px-auto py-1">Demo Class</td>
+                  </tr>
+                  <tr>
+                    <th class="px-3">Roll No.</th>
+                    <td class="px-1">:</td>
+                    <td class="px-auto py-1">Demo Roll</td>
+                  </tr>
+                  <tr>
+                    <th class="px-3">Mother's Name</th>
+                    <td class="px-1">:</td>
+                    <td class="px-auto py-1">Demo Name</td>
+                  </tr>
+                  <tr>
+                    <th class="px-3">Father's Name</th>
+                    <td class="px-1">:</td>
+                    <td class="px-auto py-1">Demo Name</td>
+                  </tr>
+                </table>
+              </div>
+              <!-- qr -->
+              <div>
+                <div class="w-42 aspect-square border border-black">
+                  <img src="./sample-qr-code.png" alt="" />
+                </div>
+              </div>
+              <!-- /qr -->
             </div>
           </div>
         </div>
         <!-- marks -->
         <div class="w-full border-y-1 py-2 border-black px-4">
-          <div class="flex gap-5">
-            <table class="w-full table text-center ">
-              <thead>
-                <tr class="border-b border-black">
+          <div>
+            <table class="w-full table-fixed text-center border">
+              <thead class="border-b border-gray-300">
+                <tr>
                   <th class="px-3 py-2 text-left">Subjects</th>
-                  <th class="px-3 py-2">PA-I (05)</th>
-                  <th class="px-3 py-2">PA-II (05)</th>
-                  <th class="px-3 py-2">Half-Yearly (40)</th>
-                  <th class="px-3 py-2">Total (50)</th>
-                  <th class="px-3 py-2">Grade</th>
+                  <th>PA-I (05)</th>
+                  <th>PA-II (05)</th>
+                  <th>Half-Yearly (40)</th>
+                  <th>Total (50)</th>
+                  <th>Grade</th>
                 </tr>
               </thead>
               <tbody>
@@ -281,70 +290,14 @@
                   <td class="px-3 py-2">#</td>
                 </tr>
               </tbody>
-              <tfoot>
-                <tr >
-                  <th class="px-3 py-2 text-left">Total</th>
-                  <th class="px-3 py-2">XXX</th>
-                  <th class="px-3 py-2">XXX</th>
-                  <th class="px-3 py-2">XXX</th>
-                  <th class="px-3 py-2">XXX</th>
-                  <th class="px-3 py-2">XXX</th>
-                 
-                </tr>
-              </tfoot>
             </table>
-            <div class="w-50">
-              <div class="w-full aspect-square border border-black">
-                <img src="./sample-qr-code.png" alt="" />
-              </div>
-              <div>
-                <table class="border border-black mt-2 text-xs w-full text-left">
-                  <tr>
-                    <th class="border border-black px-1 text-center" colspan="2">
-                      Grading System
-                    </th>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">A+</th>
-                    <td class="border border-black px-1">90% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">A</th>
-                    <td class="border border-black px-1">80% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">B+</th>
-                    <td class="border border-black px-1">70% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">B</th>
-                    <td class="border border-black px-1">60% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">C+</th>
-                    <td class="border border-black px-1">50% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">C</th>
-                    <td class="border border-black px-1">40% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">D</th>
-                    <td class="border border-black px-1">30% and above</td>
-                  </tr>
-                  <tr>
-                    <th class="border border-black px-1">E</th>
-                    <td class="border border-black px-1">Less than 30%</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
           </div>
+
           <div>
-            <div class="text-xs p-2 border border-black rounded-lg mt-2 hidden">
-              <strong>Grading Scale :</strong> A+(91%-100%), A(81%-90%),
-              B+(71%-80%), B(61%-70%), C+(51%-60%), C(41%-50%), D(33%-40%),
-              E(32% & Below)
+            <div class="p-2 border border-black rounded-lg mt-2">
+              <strong>Grading Scale:</strong>A1(&ge;91%), A2(&ge;81%),
+              B1(&ge;71%), B2(&ge;61%), C1(&ge;51%), C2(≥41%), D(&ge;33%),
+              E(&lt;33 % )
             </div>
           </div>
         </div>
@@ -384,7 +337,7 @@
           <!-- <div class="font-semibold px-5">
             <div class="flex flex-col text-center">
               <div>21-04-2024</div>
-              <div class="border-t border-dashed border-black">Class Teacher</div>
+              <div class="border-t border-dashed border-black">Date</div>
             </div>
           </div> -->
           <div class="font-semibold border-t border-dashed border-black px-5">
@@ -394,15 +347,12 @@
             Exam Controller
           </div>
           <div class="font-semibold border-t border-dashed border-black px-5">
-            Director/Principal
+            Principal
           </div>
         </div>
         <div class="bg-red-100 aspect-square w-[200px]" hidden></div>
       </div>
-      
-      
-      
-      
+
       <!-- footer -->
       <!-- ========================= HIDDEN BELOW PART ====================== -->
       <div>
@@ -457,22 +407,15 @@
       </div>
       <!-- ========================= HIDDEN ABOVE PART ====================== -->
       <!-- /footer -->
-      
-      
-      
-      
-      
-      
     </div>
     <!-- /main content -->
 
     <!-- developer details (intentionally disabled) -->
-    <!--
-    <div class="w-full text-center text-xs py-1 bg-gray-100">
+    <!-- <div class="w-full text-center text-xs py-1 bg-gray-100">
       Designed &amp; Developed by
       <a class="text-blue-600 font-semibold" href="https://skwebs.github.io">SATISH KUMAR SHARMA</a>
-    -->
-    </div>
+    </div> -->
+
   </section>
 </body>
 
