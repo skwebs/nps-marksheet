@@ -127,14 +127,20 @@
         print-color-adjust: exact;
       }
     }
+
+    .data {
+      color: #000;
+      font-weight: bold;
+      scale: 1.2;
+    }
   </style>
 </head>
 
-<body class="A4">
+<body class="A4 text-black/80">
   <!-- page -->
   <section class="sheet p-4 flex flex-col">
     <!-- main content -->
-    <div class="main-content border border-black h-full flex flex-col">
+    <div class="main-content border  h-full flex flex-col">
       <!-- header details -->
       <div class="flex justify-between px-2">
         <div class="font-semibold">Estd. : 2017</div>
@@ -166,18 +172,18 @@
       <div class="p-0">
         <!-- result type -->
         <div>
-          <div class="w-full text-center border-t border-black">
-            <div>REPORT CARD [HALF-YEARLY EXAMINATION]</div>
-            <div>SESSION <strong>2026-2027</strong></div>
+          <div class="w-full text-center border-t ">
+            <div>REPORT CARD [<span class="data">HALF-YEARLY EXAMINATION</span> ]</div>
+            <div>SESSION <span class="data">2026-2027</span></div>
           </div>
         </div>
         <!-- student details -->
         <div>
-          <div class="w-full border-t border-black py-2 px-4">
+          <div class="w-full border-t  py-2 px-4">
             <div class="flex gap-x-2">
               <!-- student picture -->
               <div>
-                <div class="border h-42 bg-red-500/20 border-black aspect-[20/23] overflow-hidden">
+                <div class="border h-42 bg-red-500/20  aspect-[20/23] overflow-hidden">
                   <img src="./person.jpg" alt="student image" class="h-full w-full" />
                 </div>
               </div>
@@ -186,34 +192,34 @@
                 <table class="w-full text-left">
                   <tr>
                     <th class="px-3 w-34">Name</th>
-                    <td class="px-1">:</td>
-                    <td class="px-auto py-1">Demo Name</td>
+                    <td class="px-2">:</td>
+                    <td class="px-auto py-1 data">Demo Name</td>
                   </tr>
                   <tr>
                     <th class="px-3">Class</th>
                     <td class="px-1">:</td>
-                    <td class="px-auto py-1">Demo Class</td>
+                    <td class="px-auto py-1 data">Demo Class</td>
                   </tr>
                   <tr>
                     <th class="px-3">Roll No.</th>
                     <td class="px-1">:</td>
-                    <td class="px-auto py-1">Demo Roll</td>
+                    <td class="px-auto py-1 data">Demo Roll</td>
                   </tr>
                   <tr>
                     <th class="px-3">Mother's Name</th>
                     <td class="px-1">:</td>
-                    <td class="px-auto py-1">Demo Name</td>
+                    <td class="px-auto py-1 data">Demo Name</td>
                   </tr>
                   <tr>
                     <th class="px-3">Father's Name</th>
                     <td class="px-1">:</td>
-                    <td class="px-auto py-1">Demo Name</td>
+                    <td class="px-auto py-1 data">Demo Name</td>
                   </tr>
                 </table>
               </div>
               <!-- qr -->
               <div>
-                <div class="w-42 aspect-square border border-black">
+                <div class="w-42 aspect-square border ">
                   <img src="./sample-qr-code.png" alt="" />
                 </div>
               </div>
@@ -222,79 +228,56 @@
           </div>
         </div>
         <!-- marks -->
-        <div class="w-full border-y-1 py-2 border-black px-4">
+        <div class="w-full border-y-1 py-2  px-4">
           <div>
-            <table class="w-full table-fixed text-center border">
-              <thead class="border-b border-gray-300">
+            <table class="w-full table-fixed text-center">
+              <thead class="border-b-2 border-gray-400">
                 <tr>
-                  <th class="px-3 py-2 text-left">Subjects</th>
-                  <th>PA-I (05)</th>
-                  <th>PA-II (05)</th>
-                  <th>Half-Yearly (40)</th>
-                  <th>Total (50)</th>
-                  <th>Grade</th>
+                  <th class="px-3 py-2 text-left">#</th>
+                  <th>Hindi</th>
+                  <th>English</th>
+                  <th>Maths</th>
+                  <th>Science</th>
+                  <th>S.Science</th>
+                  <th>Computer</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="border-b border-gray-300">
-                  <th class="px-3 py-2 text-left">Hindi</th>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
+                  <th class="px-3 py-2 text-left">Full Marks</th>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
                 </tr>
 
                 <tr class="border-b border-gray-300">
-                  <th class="px-3 py-2 text-left">English</th>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
+                  <th class="px-3 py-2 text-left">Obtained Marks</th>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
                 </tr>
 
                 <tr class="border-b border-gray-300">
-                  <th class="px-3 py-2 text-left">Maths</th>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                </tr>
-
-                <tr class="border-b border-gray-300">
-                  <th class="px-3 py-2 text-left">Science</th>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                </tr>
-
-                <tr class="border-b border-gray-300">
-                  <th class="px-3 py-2 text-left">S.Science</th>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                </tr>
-
-                <tr class="border-b border-black">
-                  <th class="px-3 py-2 text-left">Computer</th>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
-                  <td class="px-3 py-2">#</td>
+                  <th class="px-3 py-2 text-left">Grade</th>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
+                  <td class="px-3 py-2 data">#</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-            <div class="p-2 border border-black rounded-lg mt-2">
+            <div class="p-2 border  rounded-lg mt-5">
               <strong>Grading Scale:</strong>A1(&ge;91%), A2(&ge;81%),
               B1(&ge;71%), B2(&ge;61%), C1(&ge;51%), C2(≥41%), D(&ge;33%),
               E(&lt;33 % )
@@ -303,19 +286,19 @@
         </div>
 
         <div class="px-4 py-2">
-          <table class="border border-black w-full text-center">
+          <table class="border  w-full text-center">
             <tr>
-              <th class="border border-black">Obtained Marks</th>
-              <th class="border border-black">Obtained Marks %</th>
-              <th class="border border-black">Attendance</th>
-              <th class="border border-black">Grade</th>
+              <th class="border ">Obtained Marks</th>
+              <th class="border ">Obtained Marks %</th>
+              <th class="border ">Attendance</th>
+              <th class="border ">Grade</th>
             </tr>
 
             <tr>
-              <td class="border border-black">xxx/xxx</td>
-              <td class="border border-black">xxx %</td>
-              <td class="border border-black">xxx/xxx</td>
-              <td class="border border-black">xxx</td>
+              <td class="border data">xxx/xxx</td>
+              <td class="border data">xxx %</td>
+              <td class="border data">xxx/xxx</td>
+              <td class="border data">xxx</td>
             </tr>
           </table>
         </div>
@@ -323,7 +306,7 @@
         <div>
           <div class="px-4">
             <span class="font-semibold"> Remarks : </span>
-            <span> This is a sample remarks for this demo result card. </span>
+            <span class="data"> This is a sample remarks for this demo respan card. </span>
           </div>
         </div>
       </div>
@@ -331,32 +314,76 @@
       <!-- fill empty space -->
       <div class="w-full grow"></div>
 
-      <!-- signature section -->
+
+
+
+      <!-- Signature section --
       <div class="flex">
-        <div class="w-full flex justify-around p-2 items-end">
-          <!-- <div class="font-semibold px-5">
-            <div class="flex flex-col text-center">
-              <div>21-04-2024</div>
-              <div class="border-t border-dashed border-black">Date</div>
+        <div class="w-full flex justify-around items-end p-2">
+          <div class="flex flex-col items-center">
+            <div class="font-semibold text-xl data">21-04-2024</div>
+            <div class="font-semibold border-t-2 border-dashed  text-center px-4">
+              Date
             </div>
-          </div> -->
-          <div class="font-semibold border-t border-dashed border-black px-5">
-            Class Teacher
           </div>
-          <div class="font-semibold border-t border-dashed border-black px-5">
-            Exam Controller
+          <div class="flex flex-col items-center">
+            <img class="w-32" src="./digital-signature-png-download-33.png" alt="">
+            <div class="font-semibold border-t-2 border-dashed  text-center px-4">
+              Class Teacher
+            </div>
           </div>
-          <div class="font-semibold border-t border-dashed border-black px-5">
-            Principal
+          <div class="flex flex-col items-center">
+            <img class="w-32" src="./digital-signature-png-download-33.png" alt="">
+            <div class="font-semibold border-t-2 border-dashed  text-center px-4">
+              Exam Controller
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <img class="w-32" src="./digital-signature-png-download-33.png" alt="">
+            <div class="font-semibold border-t-2 border-dashed  text-center px-4">
+              Principal
+            </div>
           </div>
         </div>
-        <div class="bg-red-100 aspect-square w-[200px]" hidden></div>
       </div>
+      -->
+
+      <!-- Signature section -->
+      <div class="flex">
+        <div class="w-full flex justify-around p-2 items-end">
+          <div class=" w-1/6 flex flex-col items-center">
+            <div class="font-semibold text-xl data">21-04-2024</div>
+            <div class="w-full font-semibold border-t-2 border-dashed  text-center">
+              Date
+            </div>
+          </div>
+          <div class=" w-1/6 flex flex-col items-center">
+            <img class="w-32" src="./digital-signature-png-download-33.png" alt="">
+            <div class="w-full font-semibold border-t-2 border-dashed  text-center">
+              Teacher
+            </div>
+          </div>
+          <div class=" w-1/6 flex flex-col items-center">
+            <img class="w-32" src="./digital-signature-png-download-33.png" alt="">
+            <div class="w-full font-semibold border-t-2 border-dashed  text-center">
+              Exam Controller
+            </div>
+          </div>
+          <div class=" w-1/6 flex flex-col items-center">
+            <img class="w-32" src="./digital-signature-png-download-33.png" alt="">
+            <div class="w-full font-semibold border-t-2 border-dashed  text-center">
+              Principal
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       <!-- footer -->
       <!-- ========================= HIDDEN BELOW PART ====================== -->
       <div>
-        <div class="hidden bg-green-700 text-white px-1 py-[1px] flex justify-between border-t border-black">
+        <div class="hidden bg-green-700 text-white px-1 py-[1px] flex justify-between border-t ">
           <!-- call -->
           <div class="flex">
             <svg class="size-6 text-white m-auto mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
